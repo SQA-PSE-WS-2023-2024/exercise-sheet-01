@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.unistuttgart.iste.sqa.pse</groupId>
 	<artifactId>sheet01</artifactId>
-	<name>Sheet 01</name>
 	<version>1.0.0</version>
+	<name>Sheet 01</name>
 
 	<properties>
 		<hamster.version>5.0.0</hamster.version>
@@ -34,6 +35,9 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>3.1.0</version>
+				<configuration>
+					<mainClass>de.unistuttgart.iste.sqa.pse.sheet01.presence.FirstHamsterGameApp</mainClass>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>
@@ -41,8 +45,28 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.diffplug.spotless</groupId>
+				<artifactId>spotless-maven-plugin</artifactId>
+				<version>2.27.2</version>
 				<configuration>
-					<mainClass>de.unistuttgart.iste.sqa.pse.sheet01.presence.FirstHamsterGameApp</mainClass>
+					<java>
+						<palantirJavaFormat>
+							<version>2.27.0</version>
+						</palantirJavaFormat>
+						<indent>
+							<tabs>true</tabs>
+							<spacesPerTab>4</spacesPerTab>
+						</indent>
+					</java>
+					<pom>
+						<sortPom></sortPom>
+						<indent>
+							<tabs>true</tabs>
+							<spacesPerTab>2</spacesPerTab>
+						</indent>
+					</pom>
 				</configuration>
 			</plugin>
 		</plugins>
