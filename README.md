@@ -1,4 +1,4 @@
-# Exercise Sheet 1 – The Hamster Simulator
+# Exercise Sheet 01
 The first exercise will get you to know the Hamster Simulator – a Mini Programming World with a protagonist named Paule.
 Paule is a hamster that can be controlled programmatically.
 Starting with the basic implementation you see in this repository, you will learn how to implement new features throughout the course.
