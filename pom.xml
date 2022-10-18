@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.unistuttgart.iste.sqa.pse</groupId>
-	<artifactId>sheet01</artifactId>
+	<artifactId>exercise-sheet-01</artifactId>
 	<version>1.0.0</version>
 	<name>Sheet 01</name>
 
